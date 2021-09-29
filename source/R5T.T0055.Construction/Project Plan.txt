@@ -1,0 +1,3 @@
+R5T.T0055.Construction - Construction project for IGuidOperator and IGuid extension method base types..
+
+GOALS:
