@@ -7,6 +7,13 @@ namespace System
 {
     public static partial class IGuidOperatorExtensions
     {
+        public static Guid FromStringStandard(this IGuidOperator _,
+            string guidString)
+        {
+            var output = Guid.Parse(guidString);
+            return output;
+        }
+
         /// <summary>
         /// Chooses <see cref="GuidExtensions.ToStringUppercase(Guid)"/> as the standard.
         /// The standard string representation of a GUID.
