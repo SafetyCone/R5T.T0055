@@ -7,6 +7,15 @@ namespace System
 {
     public static partial class IGuidOperatorExtensions
     {
+        /// <summary>
+        /// All zeroes (0's).
+        /// </summary>
+        public static Guid DefaultGuid(this IGuidOperator _)
+        {
+            var output = new Guid();
+            return output;
+        }
+
         public static bool IsDefault(this IGuidOperator _,
             Guid guid)
         {
