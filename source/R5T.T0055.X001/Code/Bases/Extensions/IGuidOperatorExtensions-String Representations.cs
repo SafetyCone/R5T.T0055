@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 using R5T.T0055;
 
@@ -11,6 +13,16 @@ namespace System
             string guidString)
         {
             var output = Guid.Parse(guidString);
+            return output;
+        }
+
+        public static IEnumerable<Guid> FromStringsStandard(this IGuidOperator _,
+            IEnumerable<string> guidStrings)
+        {
+            var output = guidStrings
+                .Select(x => _.FromStringStandard(x))
+                ;
+
             return output;
         }
 
