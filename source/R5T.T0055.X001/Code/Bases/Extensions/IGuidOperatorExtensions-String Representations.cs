@@ -27,7 +27,7 @@ namespace System
         }
 
         /// <summary>
-        /// Chooses <see cref="GuidExtensions.ToStringUppercase(Guid)"/> as the standard.
+        /// Chooses <see cref="ToStringUppercase(IGuidOperator, Guid)"/> as the standard.
         /// The standard string representation of a GUID.
         /// </summary>
         /// <remarks>
