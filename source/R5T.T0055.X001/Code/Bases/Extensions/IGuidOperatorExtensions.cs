@@ -98,7 +98,7 @@ namespace System.IO
 
             var output = tokens
                 .Select(parser)
-                .Now();
+                .ToArray();
 
             return output;
         }
@@ -124,7 +124,7 @@ namespace System.IO
         {
             var tokens = values
                 .Select(formatter)
-                .Now();
+                .Now_OLD();
 
             var data = String.Join(separator, tokens);
 
